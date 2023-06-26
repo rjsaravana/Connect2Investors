@@ -1,6 +1,101 @@
 .inestor-content {
     display: flex;
     flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 90px;
+}
+
+.investor-title-para>h4 {
+    color: var(--main-txt3-color);
+    font-size: 30px;
+    font-family: 'Lato';
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.investor-title-para>button {
+    display: flex;
+    width: 106px;
+    padding: 20px 2px;
     justify-content: center;
     align-items: center;
+    gap: 1px;
+    border-radius: 12px;
+    border: 2px solid #00A7EA;
+    color: var(--main-txt1-color);
+    margin-top: 25px;
+}
+
+.investor-para {
+    width: 933px;
+    color: var(--main-txt3-color);
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Lato';
+    margin-left: 50px;
+}
+
+
+.blue-back-color {
+    border-radius: 10px;
+    background: #E8F6FF;
+}
+
+.contact-content {
+    padding: 25px;
+    padding-left: 45px;
+}
+
+.contact-content>h3 {
+    color: var(--main-txt3-color);
+    font-size: 24px;
+    font-family: 'Lato';
+    font-weight: 500;
+}
+
+.contact-content>h5 {
+    color: var(--main-txt3-color);
+    font-size: 16px;
+    font-family: 'Lato';
+    margin-left: 30px;
+}
+
+.address-content>p,
+.address-content>h6 {
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 587px;
+    color: var(--main-txt3-color);
+    font-size: 16px;
+    font-family: 'Lato';
+}
+
+
+.investor-details {
+    color: var(--main-txt3-color);
+    font-size: 24px;
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+.investor-details-content{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.investor-details-content>h5{
+    color: var(--main-txt3-color);
+    font-size: 19px;
+    font-family: 'Lato';
+    font-weight: 600;
+    margin-left: 100px;
+}
+
+.investor-details-content>h6, .investor-details-content>p{
+    color: var(--main-txt3-color);
+    font-size: 19px;
+    font-family: 'Lato';
+    margin-left: 20px;
 }

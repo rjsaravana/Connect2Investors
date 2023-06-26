@@ -1,17 +1,17 @@
-import { Card, Col, Row, Image } from "antd";
+import { Card, Col, Image, Modal, Row } from "antd";
 import "./style.css";
-import { CalendarOutlined, MessageOutlined } from "@ant-design/icons";
+import { useState } from "react";
+import ModalContent from "./modal/modal-content";
 
 const AssignPage: React.FC = () => {
+
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <h3 className="dashboard-title">Assigned Startups</h3>
       <Row>
-        <Col span={11} className="card-column">
-          <div className="card-title">
-            <h3>Startups</h3>
-            <h6>View All</h6>
-          </div>
+        <Col span={11} style={{border:'none'}} className="card-column">
           <Card className="dashboard-cards">
             <div className="card-content">
               <div>
@@ -24,7 +24,17 @@ const AssignPage: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
+              <Modal
+                title=""
+                centered
+                open={open}
+                onOk={() => setOpen(false)}
+                onCancel={() => setOpen(false)}
+                width={900}
+              >
+              <ModalContent />
+              </Modal>
             </div>
           </Card>
 
@@ -40,7 +50,7 @@ const AssignPage: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
 
@@ -56,7 +66,7 @@ const AssignPage: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
 
@@ -72,7 +82,7 @@ const AssignPage: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
 
@@ -88,18 +98,14 @@ const AssignPage: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
         </Col>
 
 {/*------------------------------------------- Second Col----------------------------------------------------- */}
 
-        <Col span={11} className="card-column">
-          <div className="card-title">
-            <h3>Startups</h3>
-            <h6>View All</h6>
-          </div>
+        <Col span={11} style={{border:'none'}} className="card-column">
           <Card className="dashboard-cards">
             <div className="card-content">
               <div>
@@ -112,7 +118,7 @@ const AssignPage: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
 
@@ -128,7 +134,7 @@ const AssignPage: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
 
@@ -144,7 +150,7 @@ const AssignPage: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
 
@@ -160,7 +166,7 @@ const AssignPage: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
 
@@ -176,7 +182,7 @@ const AssignPage: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
         </Col>

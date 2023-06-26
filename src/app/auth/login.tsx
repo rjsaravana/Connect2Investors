@@ -2,6 +2,8 @@ import { Button, Card, Col, Input, Row } from "antd";
 import { MailOutlined, LockOutlined } from "@ant-design/icons";
 import "./style.css";
 import { Container } from "@mui/material";
+import Home from "../dashboard/home";
+import { Link } from "react-router-dom";
 
 const Login: React.FC = () => {
   return (
@@ -19,21 +21,42 @@ const Login: React.FC = () => {
 
       <Col span={12}>
         <div className="c2i-logo">
-          <img style={{width:'110px'}} src="./assets/logo/c2i-logo.png" alt="Img" />
-          <img style={{width:'150px'}} src="./assets/logo/connect2investors-logo.png" alt="Img" />
+          <img
+            style={{ width: "110px" }}
+            src="./assets/logo/c2i-logo.png"
+            alt="Img"
+          />
+          <img
+            style={{ width: "150px" }}
+            src="./assets/logo/connect2investors-logo.png"
+            alt="Img"
+          />
         </div>
-        
-        <div style={{display:'flex', justifyContent:'center'}}>
-        <Card className="login-card">
-          <label className="email-text">Email</label>
-          <Input className="email-input" placeholder="Email" prefix={<MailOutlined style={{fontSize:'25px'}} />} />
-          <label className="password-text">Password</label>
-          <Input className="password-input" placeholder="Password" prefix={<LockOutlined style={{fontSize:'25px'}} />} />
-          <Button className="signup-btn" type="primary">SIGN UP</Button>
-        </Card>
+
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <Card className="login-card">
+            <label className="email-text">Email</label>
+            <Input
+              className="email-input"
+              placeholder="Email"
+              prefix={<MailOutlined style={{ fontSize: "25px" }} />}
+            />
+            <label className="password-text">Password</label>
+            <Input
+              className="password-input"
+              placeholder="Password"
+              prefix={<LockOutlined style={{ fontSize: "25px" }} />}
+            />
+
+            <Link to="/home">
+              <Button className="signup-btn" type="primary">
+                SIGN UP
+              </Button>
+            </Link>
+          </Card>
         </div>
       </Col>
-    </Row> 
+    </Row>
     // </Container>
   );
 };

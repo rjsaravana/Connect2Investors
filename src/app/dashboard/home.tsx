@@ -1,8 +1,20 @@
-import { Card, Col, Row, Image } from "antd";
+import { Card, Col, Row, Image, Modal } from "antd";
 import "./style.css";
 import { CalendarOutlined, MessageOutlined } from "@ant-design/icons";
+import { useNavigate, Link } from "react-router-dom";
+import React, { useState } from "react";
+import ModalContent from "./modal/modal-content";
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/assign-startup");
+  };
+  const hangleNav = () => {
+    navigate("/meeting-schedule");
+  };
+
+  const [open, setOpen] = useState(false);
   return (
     <>
       <h3 className="dashboard-title">Welcome to Connect2Investors!</h3>
@@ -10,8 +22,7 @@ const Home: React.FC = () => {
         <Col span={11} className="card-column">
           <div className="card-title">
             <h3>Startups</h3>
-            <h6>View All</h6>
-            
+            <h6 onClick={handleClick}>View All</h6>
           </div>
           <Card className="dashboard-cards">
             <div className="card-content">
@@ -25,7 +36,17 @@ const Home: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
+              <Modal
+                title=""
+                centered
+                open={open}
+                onOk={() => setOpen(false)}
+                onCancel={() => setOpen(false)}
+                width={900}
+              >
+              <ModalContent />
+              </Modal>
             </div>
           </Card>
 
@@ -41,14 +62,14 @@ const Home: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
 
           <Card className="dashboard-cards">
             <div className="card-content">
               <div>
-                <Image width={90} src="./assets/Ellipse3.png" />
+                <Image width={90} src="./assets/Ellipse3.png"/>
               </div>
               <div style={{ marginLeft: "30px" }} className="card-headers">
                 <h4>Digital Corporation</h4>
@@ -57,7 +78,7 @@ const Home: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
 
@@ -73,7 +94,7 @@ const Home: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
 
@@ -89,18 +110,17 @@ const Home: React.FC = () => {
             </div>
             <div className="card-mobile-deatails">
               <h5>+919798718368</h5>
-              <h6>Details</h6>
+              <h6 onClick={() => setOpen(true)}>Details</h6>
             </div>
           </Card>
         </Col>
 
-{/*------------------------------------------- Second Col----------------------------------------------------- */}
-
+        {/*------------------------------------------- Second Col----------------------------------------------------- */}
 
         <Col span={11} className="card-column">
           <div className="card-title">
             <h3>Meeting Schedule</h3>
-            <h6>View All</h6>
+            <h6 onClick={hangleNav}>View All</h6>
           </div>
 
           <Card className="dashboard-meeting-cards blue-background-cards">
@@ -198,7 +218,6 @@ const Home: React.FC = () => {
               </h5>
             </div>
           </Card>
-
         </Col>
       </Row>
     </>

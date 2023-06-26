@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Mulish:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900&family=Palanquin+Dark&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500;600;700;800;900&display=swap');
+
 .App {
   text-align: center;
+}
+
+:root {
+  --main-txt-color: #FEFEFE;
+  --main-txt1-color: #00A7EA;
+  --main-txt2-color: #111E2E;
+  --main-txt3-color: #1C1B1F;
+}
+
+body{
+  width: 99%;
+  height: 100vh;
 }
 
 .App-logo {

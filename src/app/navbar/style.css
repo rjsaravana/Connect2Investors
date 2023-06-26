@@ -1,0 +1,6 @@
+.header-nav{
+    background: var(--main-txt1-color);
+    width: 101%;
+    height: 80px;
+    z-index: 1000;
+}

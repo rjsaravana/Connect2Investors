@@ -1,0 +1,132 @@
+body {
+    font-family: 'Lato';
+}
+
+.dashboard-title {
+    color: var(--main-txt3-color);
+    font-size: 30px;
+    font-family: 'Lato';
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.card-column {
+    border-radius: 8px;
+    border: 1px solid var(--main-txt1-color);
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-title>h3 {
+    color: var(--main-txt3-color);
+    font-size: 28px;
+    font-family: 'Lato';
+    font-weight: 600;
+}
+
+.card-title>h6 {
+    color: var(--main-txt1-color);
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dashboard-cards {
+    width: 600x;
+    height: 140px;
+    margin-top: 25px;
+    border-radius: 16px;
+    background: var(--main-txt-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-headers>h4 {
+    color: var(--main-txt1-color);
+    font-size: 22px;
+    font-family: 'Lato';
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-headers>h6 {
+    color: var(--main-txt3-color);
+    font-size: 14px;
+    font-family: 'Lato';
+    margin: 0;
+    margin-top: 10px;
+}
+
+.card-mobile-deatails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.card-mobile-deatails>h5 {
+    color: var(--main-txt3-color);
+    font-size: 14px;
+    font-family: 'Lato';
+    margin-top: 10px;
+}
+
+.card-mobile-deatails>h6 {
+    color: var(--main-txt1-color);
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.blue-background-cards {
+    background: #E8F6FF !important;
+}
+
+
+.dashboard-meeting-cards {
+    width: 600x;
+    height: 110px;
+    margin-top: 25px;
+    border-radius: 16px;
+    background: var(--main-txt-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.message-icon {
+    font-size: 24px !important;
+    color: var(--main-txt1-color);
+    float: right;
+}
+
+.card-headers>h5{
+    color: rgba(58, 53, 65, 0.60);
+    font-size: 12px;
+    font-family: 'Lato';
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    margin-top: 15px;
+}

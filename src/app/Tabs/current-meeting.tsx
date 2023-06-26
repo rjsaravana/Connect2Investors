@@ -4,6 +4,10 @@ import { CalendarOutlined, MessageOutlined } from "@ant-design/icons";
 import { useNavigate, Link } from "react-router-dom";
 
 const CurrentMeeting: React.FC = () => {
+    const navigate = useNavigate();
+    const handleClick = () => {
+      navigate("/adminpage");
+    };
   return (
     <>
       <Row>
@@ -11,7 +15,7 @@ const CurrentMeeting: React.FC = () => {
           <Card className="dashboard-meeting-cards blue-background-cards">
             <div className="card-headers">
               <h4>Call with Hilda</h4>
-              <MessageOutlined
+              <MessageOutlined onClick={handleClick}
                 className="message-icon"
                 style={{ marginTop: "-10px" }}
               />

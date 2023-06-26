@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router";
 import { BrowserRouter, Link } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import Meeting from "./app/Tabs/meeting";
+import AdminPage from "./app/admin/adminpage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/assign-startup" element={<AssignPage />} />
         <Route path="/meeting-schedule" element={<Meeting />} />
+        <Route path="/adminpage" element={<AdminPage />} />
       </Routes>
     </BrowserRouter>
   );

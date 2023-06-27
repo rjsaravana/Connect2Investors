@@ -133,6 +133,11 @@
     padding: 8px 16px;
     border-radius: 8px;
     border: 1px solid #CFD3D4;
+    background: #E8F6FF;
+}
+
+.code-selector-input .ant-select-selector{
+    background: #E8F6FF !important;
 }
 
 .select-box {
@@ -144,6 +149,34 @@
     display: flex;
     align-items: center;
     height: 44px !important;
+}
+
+
+.update-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.update-title h4 {
+    color: var(--main-txt3-color);
+    font-size: 28px;
+    font-family: 'Inter';
+    font-weight: 600;
+    letter-spacing: 0.15px;
+}
+
+.update-title button {
+    display: flex;
+    width: 106px;
+    padding: 20px 2px;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    border-radius: 12px;
+    border: 2px solid #00A7EA;
+    color: var(--main-txt1-color);
+    margin-top: 28px;
 }
 
 .update-btn {
@@ -161,7 +194,8 @@
     font-family: 'Inter';
 }
 
-.update-btn:hover, .submit-btn:hover {
+.update-btn:hover,
+.submit-btn:hover {
     color: #FEFEFE !important;
 }
 
@@ -184,4 +218,29 @@
     border-radius: 12px;
     background: var(--main-txt1-color);
     box-shadow: 0px 4px 20px 0px rgba(61, 70, 112, 0.08)
+}
+
+.custom-card-design h5 {
+    color: var(--main-txt3-color) !important;
+    font-size: 22px;
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+.custom-card-design .ant-form-item-label>label {
+    color: var(--main-txt3-color) !important;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+.custom-card-design .ant-input,
+.custom-card-design .ant-select-selector {
+    background: #E8F6FF !important;
+    height: 42px !important;
+    border-radius: 8px;
+    border: 1px solid #CFD3D4;
+}
+
+.custom-card-design textarea.ant-input{
+    height: 100px !important;
 }

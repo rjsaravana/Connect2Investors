@@ -11,7 +11,11 @@ const Navbar: React.FC = () => {
   } = theme.useToken();
 
   return (
-    <Header className="header-nav">
+    <Layout className="layout">
+    <Header
+      className="header-nav"
+      style={{ display: "flex", alignItems: "center" }}
+    >
       <div
         style={{
           display: "flex",
@@ -31,29 +35,29 @@ const Navbar: React.FC = () => {
         />
       </div>
 
-      <div className="nav">
-        <div className="nav-right">
-          <ul className="ant-menu ant-menu-root ant-menu-horizontal">
-            <li className="ant-menu-item ant-menu-item-only-child">
-              {" "}
-              <h4>
-                <AppstoreOutlined />
-                Dashboard
-              </h4>
-            </li>
+      <Menu style={{ display: "flex", flexDirection:'row' , alignItems: "center" }} theme="dark"
+          mode="horizontal">
+            <ul>
+              <li>
+                {" "}
+                <h4>
+                  <AppstoreOutlined />
+                  Dashboard
+                </h4>
+              </li>
+              <li>
+                <h4>
+                  <CalendarOutlined />
+                  Meetings
+                </h4>
+              </li>
+            </ul>
             <li>
-              <h4>
-                <CalendarOutlined />
-                Meetings
-              </h4>
+              <h4>Admin</h4>
             </li>
-          </ul>
-          <li>
-            <h4>Admin</h4>
-          </li>
-        </div>
-      </div>
+      </Menu>
     </Header>
+    </Layout>         
   );
 };
 

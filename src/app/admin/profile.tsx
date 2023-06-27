@@ -9,7 +9,7 @@ const Profile: React.FC = () => (
       <label className="profile-labelname">E Mail*</label>
       <Input className="card-select-input" />
       <label className="profile-labelname">Mobile Number*</label>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex" }} className="code-selector-input">
         <Select
           defaultValue="91"
           className="select-box"

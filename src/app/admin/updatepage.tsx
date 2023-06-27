@@ -7,12 +7,7 @@ const UpdatePage: React.FC = () => {
   return (
     <>
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "30px",
-        }}
-      >
+      className="update-title">
         <h4>Update</h4>
         <Button>Cancel</Button>
       </div>
@@ -34,10 +29,27 @@ const UpdatePage: React.FC = () => {
                   maxLength={50}
                 />
               </Form.Item>
+
+              <Form.Item
+                name="bankName"
+                label="Phone Number"
+                wrapperCol={{ span: 20}}
+              >
+                <Input
+                  placeholder="Bank Name"
+                  className="input-box-bg"
+                  maxLength={50}
+                />
+              </Form.Item>
+              
+            </Col>
+
+            <Col xl={16} lg={14} md={12} sm={24}>
+            
               <Form.Item
                 name="investorUrl"
                 label="Investor Url"
-                wrapperCol={{ span: 20 }}
+                wrapperCol={{ span: 21 }}
               >
                 <Input
                   placeholder="Bank Name"
@@ -46,20 +58,7 @@ const UpdatePage: React.FC = () => {
                   type="url"
                 />
               </Form.Item>
-            </Col>
 
-            <Col xl={16} lg={14} md={12} sm={24}>
-              <Form.Item
-                name="bankName"
-                label="Phone Number"
-                wrapperCol={{ span: 21 }}
-              >
-                <Input
-                  placeholder="Bank Name"
-                  className="input-box-bg"
-                  maxLength={50}
-                />
-              </Form.Item>
               <Form.Item
                 name="ifscCode"
                 label="Investor Email"
@@ -93,16 +92,13 @@ const UpdatePage: React.FC = () => {
             <Col xl={12} lg={10} md={12} sm={24}>
               <Form.Item
                 name="country"
-                label="Country"
+                label={<label className="">Country</label>}
                 wrapperCol={{ span: 20 }}
               >
-                <Select
-                  maxLength={50}
-                  placeholder="Country"
-                />
-             </Form.Item>
+                <Select maxLength={50} placeholder="Select Country" />
+              </Form.Item>
 
-             <Form.Item
+              <Form.Item
                 name="contactPersonName"
                 label="Contact Person Name"
                 wrapperCol={{ span: 20 }}
@@ -117,10 +113,7 @@ const UpdatePage: React.FC = () => {
 
             <Col xl={12} lg={14} md={12} sm={24}>
               <Form.Item name="state" label="State" wrapperCol={{ span: 20 }}>
-              <Select
-                  maxLength={50}
-                  placeholder="State"
-                />
+                <Select maxLength={50} placeholder="Select State" />
               </Form.Item>
 
               <Form.Item
@@ -128,22 +121,19 @@ const UpdatePage: React.FC = () => {
                 label="Sector Interests"
                 wrapperCol={{ span: 20 }}
               >
-                <Select
-                  maxLength={50}
-                  placeholder="Enter Sector Interests"
-                />
+                <Select maxLength={50} placeholder="Select Sector Interests" />
               </Form.Item>
             </Col>
+          </Row>
+
+          <Row style={{ marginLeft: "50px" }}>
             <Col xl={12} lg={14} md={12} sm={24}>
               <Form.Item
                 name="investmentCategory"
                 label="Investment Category"
                 wrapperCol={{ span: 20 }}
               >
-                 <Select
-                  maxLength={50}
-                  placeholder="Enter Sector Interests"
-                />
+                <Select maxLength={50} placeholder="Select Category" />
               </Form.Item>
             </Col>
           </Row>
@@ -165,7 +155,14 @@ const UpdatePage: React.FC = () => {
         </Form>
       </Card>
 
-      <div style={{display:'flex',justifyContent:'center', marginTop:'60px',paddingBottom:'50px'}}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "60px",
+          paddingBottom: "50px",
+        }}
+      >
         <Button className="submit-btn">Submit</Button>
       </div>
     </>

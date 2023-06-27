@@ -8,9 +8,16 @@ import {
 } from "@ant-design/icons";
 import "./style.css";
 import { Button, Col, Image, Row } from "antd";
+import { useNavigate } from "react-router-dom";
 import { Container } from "@mui/material";
 
 const InvestorInfo: React.FC = () => {
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/updatepage");
+  };
+
   return (
     <Container style={{ maxWidth: "1350px" }}>
       <div className="inestor-content">
@@ -23,7 +30,7 @@ const InvestorInfo: React.FC = () => {
             style={{ display: "flex", justifyContent: "space-between" }}
           >
             <h4>Investor Name</h4>
-            <Button>
+            <Button onClick={handleClick}>
               <EditOutlined />
               Edit Info
             </Button>
@@ -39,7 +46,7 @@ const InvestorInfo: React.FC = () => {
 
       <Row gutter={24} style={{ marginTop: "70px" }}>
         <Col span={9} className="contact-content blue-back-color">
-          <h3 style={{marginLeft:'30px'}}>Contact details</h3>
+          <h3 style={{ marginLeft: "30px" }}>Contact details</h3>
           <h5>
             <MailOutlined style={{ marginRight: "15px" }} />
             vininshgskdksfnafghjjk2000@gmail.com
@@ -58,7 +65,11 @@ const InvestorInfo: React.FC = () => {
           <h3 style={{ marginLeft: "20px" }}>Address</h3>
           <div className="address-content">
             <p>
-              <AimOutlined style={{ marginRight: "20px", fontSize: "20px" }} />
+              <img
+                src="./assets/icons/gps.svg"
+                alt="icon"
+                style={{ marginRight: "20px", width: "4%" }}
+              />
               Erode Fortrwzhertjryky is Lorem Ipsum?Erode Fortrwzhertjryky is
               Lorem Ipsum? Erode Fortrwzhertjryky is Lorem Ipsum?
             </p>
@@ -69,36 +80,45 @@ const InvestorInfo: React.FC = () => {
               https://bfx-connect2investors-investor.web.app/on-boardinghttps://bfx-connect2investors-investor.web.app/on-boarding
             </p>
             <h6>
-              <FlagOutlined style={{ marginRight: "20px", fontSize: "20px" }} />
+              <FlagOutlined style={{ marginRight: "20px", fontSize: "16px" }} />
               Tamil Nadu
             </h6>
           </div>
         </Col>
       </Row>
 
-      <Row gutter={24} className="blue-back-color" style={{ marginTop: "40px" }}>
-        <h3 className="investor-details" style={{marginLeft:'40px',marginTop:'40px'}}>Investor Details</h3>
+      <Row
+        gutter={24}
+        className="blue-back-color"
+        style={{ marginTop: "40px"}}
+      >
+        <h3
+          className="investor-details"
+          style={{ marginLeft: "40px", marginTop: "40px" }}
+        >
+          Investor Details
+        </h3>
         <div>
           <div className="investor-details-content">
-            <h5>Contact Person Name</h5>
-            <h6>Arun Karthick</h6>
+            <label>Contact Person Name</label>
+            <label className="input-vales" style={{marginLeft:'200px'}}>Arun Karthick</label>
           </div>
           <div className="investor-details-content">
-            <h5>Sector Interests</h5>
-            <h6>sds</h6>
+            <label>Sector Interests</label>
+            <label className="input-vales" style={{marginLeft:'250px'}}>sds</label>
           </div>
           <div className="investor-details-content">
-            <h5>Investment Category</h5>
-            <h6>semi</h6>
+            <label>Investment Category</label>
+            <label className="input-vales" style={{marginLeft:'208px'}}>semi</label>
           </div>
-          <div className="investor-details-content">
-            <h5>Comments</h5>
-            <p>
+          <div className="investor-details-content" style={{paddingBottom:'50px'}}>
+            <label>Comments</label>
+            <label className="input-vales-para">
               o is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
               and typesetting industry. Lorem Ipsum has been the industry's
               standard dummy text ever since the 1500s, when an unknown printer
               took a galley of type and scrambled it to make a type s
-            </p>
+            </label>
           </div>
         </div>
       </Row>

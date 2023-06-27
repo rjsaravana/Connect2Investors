@@ -8,7 +8,7 @@ const UpcomingMeeting: React.FC = () => {
     <>
       <Row>
         <Col span={11} style={{ border: "none" }} className="card-column">
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <MessageOutlined
@@ -24,7 +24,7 @@ const UpcomingMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <MessageOutlined
@@ -40,7 +40,7 @@ const UpcomingMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <MessageOutlined
@@ -56,7 +56,7 @@ const UpcomingMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <MessageOutlined
@@ -77,7 +77,7 @@ const UpcomingMeeting: React.FC = () => {
         {/*------------------------------------------- Second Col----------------------------------------------------- */}
 
         <Col span={11} style={{ border: "none" }} className="card-column">
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <MessageOutlined
@@ -93,7 +93,7 @@ const UpcomingMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <MessageOutlined
@@ -109,7 +109,7 @@ const UpcomingMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <MessageOutlined

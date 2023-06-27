@@ -9,7 +9,7 @@ const PastMeeting: React.FC = () => {
       <Row>
         <Col span={11} style={{border:'none'}} className="card-column">
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -21,7 +21,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -33,7 +33,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -45,7 +45,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -57,7 +57,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -69,7 +69,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -81,7 +81,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -93,7 +93,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -105,7 +105,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -117,7 +117,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -135,7 +135,7 @@ const PastMeeting: React.FC = () => {
 
         <Col span={11} style={{border:'none'}} className="card-column">
 
-        <Card className="dashboard-meeting-cards blue-background-cards">
+        <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -147,7 +147,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -159,7 +159,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -171,7 +171,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -183,7 +183,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -195,7 +195,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -207,7 +207,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -219,7 +219,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -231,7 +231,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>
@@ -243,7 +243,7 @@ const PastMeeting: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <h5>

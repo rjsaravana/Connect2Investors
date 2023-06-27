@@ -24,7 +24,7 @@ const Home: React.FC = () => {
             <h3>Startups</h3>
             <h6 onClick={handleClick}>View All</h6>
           </div>
-          <Card className="dashboard-cards">
+          <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse1.png" />
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards blue-background-cards">
+          <Card className="dashboard-cards blue-background-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse2.png" />
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards">
+          <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse3.png"/>
@@ -82,7 +82,7 @@ const Home: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards blue-background-cards">
+          <Card className="dashboard-cards blue-background-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse4.png" />
@@ -98,7 +98,7 @@ const Home: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards">
+          <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse5.png" />
@@ -123,7 +123,7 @@ const Home: React.FC = () => {
             <h6 onClick={hangleNav}>View All</h6>
           </div>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <MessageOutlined
@@ -139,7 +139,7 @@ const Home: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards">
+          <Card className="dashboard-meeting-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Conference Call</h4>
               <MessageOutlined
@@ -155,7 +155,7 @@ const Home: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Lunch</h4>
               <MessageOutlined
@@ -171,7 +171,7 @@ const Home: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards">
+          <Card className="dashboard-meeting-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Conference Call</h4>
               <MessageOutlined
@@ -187,7 +187,7 @@ const Home: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards blue-background-cards">
+          <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
               <MessageOutlined
@@ -203,7 +203,7 @@ const Home: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-meeting-cards">
+          <Card className="dashboard-meeting-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Conference Call</h4>
               <MessageOutlined

@@ -2,6 +2,7 @@ import { RocketOutlined, UserOutlined } from "@ant-design/icons";
 import { Tabs, TabsProps } from "antd";
 import React, { useState } from "react";
 import InvestorInfo from "./investorinfo";
+import Profile from "./profile";
 
 const AdminPage: React.FC = () => {
   const [selectTab, setSelectTab] = useState<string>("1");
@@ -37,7 +38,7 @@ const AdminPage: React.FC = () => {
       {selectTab === "1" ? (
         <InvestorInfo />
       ) : selectTab === "2" ? (
-        <InvestorInfo />
+        <Profile />
       ) : null}
     </>
   );

@@ -12,7 +12,7 @@ const AssignPage: React.FC = () => {
       <h3 className="dashboard-title">Assigned Startups</h3>
       <Row>
         <Col span={11} style={{border:'none'}} className="card-column">
-          <Card className="dashboard-cards">
+          <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse1.png" />
@@ -38,7 +38,7 @@ const AssignPage: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards blue-background-cards">
+          <Card className="dashboard-cards blue-background-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse2.png" />
@@ -54,7 +54,7 @@ const AssignPage: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards">
+          <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse3.png" />
@@ -70,7 +70,7 @@ const AssignPage: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards blue-background-cards">
+          <Card className="dashboard-cards blue-background-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse4.png" />
@@ -86,7 +86,7 @@ const AssignPage: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards">
+          <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse5.png" />
@@ -106,7 +106,7 @@ const AssignPage: React.FC = () => {
 {/*------------------------------------------- Second Col----------------------------------------------------- */}
 
         <Col span={11} style={{border:'none'}} className="card-column">
-          <Card className="dashboard-cards">
+          <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse1.png" />
@@ -122,7 +122,7 @@ const AssignPage: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards blue-background-cards">
+          <Card className="dashboard-cards blue-background-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse2.png" />
@@ -138,7 +138,7 @@ const AssignPage: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards">
+          <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse3.png" />
@@ -154,7 +154,7 @@ const AssignPage: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards">
+          <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse3.png" />
@@ -170,7 +170,7 @@ const AssignPage: React.FC = () => {
             </div>
           </Card>
 
-          <Card className="dashboard-cards">
+          <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
                 <Image width={90} src="./assets/Ellipse3.png" />

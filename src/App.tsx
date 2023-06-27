@@ -21,6 +21,7 @@ function App() {
         <Route path="/meeting-schedule" element={<Meeting />} />
         <Route path="/adminpage" element={<AdminPage />} />
         <Route path="/updatepage" element={<UpdatePage />} />
+        <Route path="/navbar" element={<Navbar />} />
       </Routes>
     </BrowserRouter>
   );

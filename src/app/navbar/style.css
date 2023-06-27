@@ -1,6 +1,23 @@
-.header-nav{
+.header-nav {
     background: var(--main-txt1-color);
     width: 101%;
     height: 80px;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
 }
+
+.nav-content {
+    gap: 40px !important;
+    margin-right: 50px !important;
+}
+
+.nav-content h4, .nav-content .ant-space{
+    color: #FEFEFE;
+    font-size: 16px;
+    font-family: 'Lato';
+    font-weight: 500;
+}
+

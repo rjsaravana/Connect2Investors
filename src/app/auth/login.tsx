@@ -9,7 +9,7 @@ const Login: React.FC = () => {
   return (
     // <Container>
     <Row gutter={24}>
-      <Col className="login-background" span={12}>
+      <Col className="login-background" xl={12} lg={12} md={12} sm={24}>
         <div className="login-image">
           <img src="./assets/interace-Logged-in.png" alt="Img" />
         </div>
@@ -19,7 +19,7 @@ const Login: React.FC = () => {
         </p>
       </Col>
 
-      <Col span={12}>
+      <Col xl={12} lg={12} md={12} sm={24}>
         <div className="c2i-logo">
           <img
             style={{ width: "110px" }}

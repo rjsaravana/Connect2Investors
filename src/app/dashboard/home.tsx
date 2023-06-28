@@ -19,7 +19,7 @@ const Home: React.FC = () => {
     <>
       <h3 className="dashboard-title">Welcome to Connect2Investors!</h3>
       <Row>
-        <Col xl={11} lg={24} md={24} sm={24} className="card-column">
+        <Col xl={11} lg={11} md={24} sm={24} className="card-column">
           <div className="card-title">
             <h3>Startups</h3>
             <h6 onClick={handleClick}>View All</h6>
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
 
         {/*------------------------------------------- Second Col----------------------------------------------------- */}
 
-        <Col xl={11} lg={24} md={24} sm={24} className="card-column">
+        <Col xl={11} lg={11} md={24} sm={24} className="card-column">
           <div className="card-title">
             <h3>Meeting Schedule</h3>
             <h6 onClick={hangleNav}>View All</h6>

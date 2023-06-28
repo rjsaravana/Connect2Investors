@@ -11,7 +11,7 @@ const AssignPage: React.FC = () => {
     <>
       <h3 className="dashboard-title">Assigned Startups</h3>
       <Row>
-        <Col xl={11} lg={24} md={24} sm={24} style={{border:'none'}} className="card-column">
+        <Col xl={11} lg={11} md={24} sm={24} style={{border:'none'}} className="card-column">
           <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
@@ -105,7 +105,7 @@ const AssignPage: React.FC = () => {
 
 {/*------------------------------------------- Second Col----------------------------------------------------- */}
 
-        <Col xl={11} lg={24} md={24} sm={24} style={{border:'none'}} className="card-column">
+        <Col xl={11} lg={11} md={24} sm={24} style={{border:'none'}} className="card-column">
           <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>

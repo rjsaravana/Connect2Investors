@@ -15,14 +15,14 @@ const InvestorInfo: React.FC = () => {
 
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/updatepage");
+    navigate("/home/updatepage");
   };
 
   return (
     <Container style={{ maxWidth: "1350px" }}>
       <div className="inestor-content">
         <div>
-          <Image width={151} src="./assets/Ellipse6.png" />
+          <Image width={151} src="/assets/Ellipse6.png" />
         </div>
         <div>
           <div
@@ -66,7 +66,7 @@ const InvestorInfo: React.FC = () => {
           <div className="address-content">
             <p>
               <img
-                src="./assets/icons/gps.svg"
+                src="/assets/icons/gps.svg"
                 alt="icon"
                 style={{ marginRight: "20px", width: "4%" }}
               />

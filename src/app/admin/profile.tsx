@@ -2,7 +2,7 @@ import { Button, Card, Input, Select } from "antd";
 import React from "react";
 
 const Profile: React.FC = () => (
-  <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
+  <div style={{ display: "flex", justifyContent: "center", marginTop: "20px", paddingBottom:'50px' }}>
     <Card className="profile-card" hoverable={true}>
       <label className="profile-labelname">Name*</label>
       <Input className="card-select-input" />

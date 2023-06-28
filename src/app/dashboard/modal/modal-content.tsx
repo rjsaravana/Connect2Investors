@@ -89,6 +89,7 @@ const ModalContent: React.FC = () => {
         style={{padding:'20px'}}
         columns={columns}
         dataSource={data}
+        className="pop-table"
       />
     </>
   );

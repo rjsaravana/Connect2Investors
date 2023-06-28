@@ -8,10 +8,10 @@ import ModalContent from "./modal/modal-content";
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/assign-startup");
+    navigate("/home/assign-startup");
   };
   const hangleNav = () => {
-    navigate("/meeting-schedule");
+    navigate("/home/meeting-schedule");
   };
 
   const [open, setOpen] = useState(false);
@@ -19,7 +19,7 @@ const Home: React.FC = () => {
     <>
       <h3 className="dashboard-title">Welcome to Connect2Investors!</h3>
       <Row>
-        <Col span={11} className="card-column">
+        <Col xl={11} lg={24} md={24} sm={24} className="card-column">
           <div className="card-title">
             <h3>Startups</h3>
             <h6 onClick={handleClick}>View All</h6>
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
 
         {/*------------------------------------------- Second Col----------------------------------------------------- */}
 
-        <Col span={11} className="card-column">
+        <Col xl={11} lg={24} md={24} sm={24} className="card-column">
           <div className="card-title">
             <h3>Meeting Schedule</h3>
             <h6 onClick={hangleNav}>View All</h6>

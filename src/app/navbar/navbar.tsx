@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => navigate("/adminpage")}
+          onClick={() => navigate("/home/adminpage")}
         >
           <EditOutlined style={{ marginRight: "5px" }} /> Edit Profile
         </a>
@@ -31,15 +31,17 @@ const Navbar: React.FC = () => {
     },
     {
       label: (
-        <a target="_blank" rel="noopener noreferrer" onClick={() => navigate("/")}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => navigate("/")}
+        >
           <LogoutOutlined style={{ marginRight: "5px" }} /> Log Out
         </a>
       ),
       key: "1",
     },
   ];
-
-  
 
   const hangleNav = () => {
     navigate("/login");
@@ -57,12 +59,12 @@ const Navbar: React.FC = () => {
         >
           <img
             style={{ width: "50px", marginLeft: "25px", marginTop: "10px" }}
-            src="./assets/logo/c2i-logo.png"
+            src="/assets/logo/c2i-logo.png"
             alt="Img"
           />
           <img
             style={{ width: "100px" }}
-            src="./assets/logo/connect2investors-logo.png"
+            src="/assets/logo/connect2investors-logo.png"
             alt="Img"
           />
         </div>
@@ -72,7 +74,7 @@ const Navbar: React.FC = () => {
             <AppstoreOutlined style={{ marginRight: "6px" }} />
             Dashboard
           </h4>
-          <h4>
+          <h4  onClick={() => navigate("/home/meeting-schedule")}>
             <CalendarOutlined style={{ marginRight: "6px" }} />
             Meetings
           </h4>

@@ -11,11 +11,11 @@ const AssignPage: React.FC = () => {
     <>
       <h3 className="dashboard-title">Assigned Startups</h3>
       <Row>
-        <Col span={11} style={{border:'none'}} className="card-column">
+        <Col xl={11} lg={24} md={24} sm={24} style={{border:'none'}} className="card-column">
           <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
-                <Image width={90} src="./assets/Ellipse1.png" />
+                <Image width={90} src="/assets/Ellipse1.png" />
               </div>
               <div style={{ marginLeft: "30px" }} className="card-headers">
                 <h4>1stCollab</h4>
@@ -41,7 +41,7 @@ const AssignPage: React.FC = () => {
           <Card className="dashboard-cards blue-background-cards" hoverable={true}>
             <div className="card-content">
               <div>
-                <Image width={90} src="./assets/Ellipse2.png" />
+                <Image width={90} src="/assets/Ellipse2.png" />
               </div>
               <div style={{ marginLeft: "30px" }} className="card-headers">
                 <h4>V43 Digital Solution</h4>
@@ -57,7 +57,7 @@ const AssignPage: React.FC = () => {
           <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
-                <Image width={90} src="./assets/Ellipse3.png" />
+                <Image width={90} src="/assets/Ellipse3.png" />
               </div>
               <div style={{ marginLeft: "30px" }} className="card-headers">
                 <h4>Digital Corporation</h4>
@@ -73,7 +73,7 @@ const AssignPage: React.FC = () => {
           <Card className="dashboard-cards blue-background-cards" hoverable={true}>
             <div className="card-content">
               <div>
-                <Image width={90} src="./assets/Ellipse4.png" />
+                <Image width={90} src="/assets/Ellipse4.png" />
               </div>
               <div style={{ marginLeft: "30px" }} className="card-headers">
                 <h4>Mohan Startup</h4>
@@ -89,7 +89,7 @@ const AssignPage: React.FC = () => {
           <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
-                <Image width={90} src="./assets/Ellipse5.png" />
+                <Image width={90} src="/assets/Ellipse5.png" />
               </div>
               <div style={{ marginLeft: "30px" }} className="card-headers">
                 <h4>One co</h4>
@@ -105,11 +105,11 @@ const AssignPage: React.FC = () => {
 
 {/*------------------------------------------- Second Col----------------------------------------------------- */}
 
-        <Col span={11} style={{border:'none'}} className="card-column">
+        <Col xl={11} lg={24} md={24} sm={24} style={{border:'none'}} className="card-column">
           <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
-                <Image width={90} src="./assets/Ellipse1.png" />
+                <Image width={90} src="/assets/Ellipse1.png" />
               </div>
               <div style={{ marginLeft: "30px" }} className="card-headers">
                 <h4>1stCollab</h4>
@@ -125,7 +125,7 @@ const AssignPage: React.FC = () => {
           <Card className="dashboard-cards blue-background-cards" hoverable={true}>
             <div className="card-content">
               <div>
-                <Image width={90} src="./assets/Ellipse2.png" />
+                <Image width={90} src="/assets/Ellipse2.png" />
               </div>
               <div style={{ marginLeft: "30px" }} className="card-headers">
                 <h4>V43 Digital Solution</h4>
@@ -141,7 +141,7 @@ const AssignPage: React.FC = () => {
           <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
-                <Image width={90} src="./assets/Ellipse3.png" />
+                <Image width={90} src="/assets/Ellipse3.png" />
               </div>
               <div style={{ marginLeft: "30px" }} className="card-headers">
                 <h4>Digital Corporation</h4>
@@ -157,7 +157,7 @@ const AssignPage: React.FC = () => {
           <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
-                <Image width={90} src="./assets/Ellipse3.png" />
+                <Image width={90} src="/assets/Ellipse3.png" />
               </div>
               <div style={{ marginLeft: "30px" }} className="card-headers">
                 <h4>Digital Corporation</h4>
@@ -173,7 +173,7 @@ const AssignPage: React.FC = () => {
           <Card className="dashboard-cards" hoverable={true}>
             <div className="card-content">
               <div>
-                <Image width={90} src="./assets/Ellipse3.png" />
+                <Image width={90} src="/assets/Ellipse3.png" />
               </div>
               <div style={{ marginLeft: "30px" }} className="card-headers">
                 <h4>Digital Corporation</h4>

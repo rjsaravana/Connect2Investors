@@ -13,6 +13,42 @@ body {
     margin-left: 40px;
 }
 
+.pop-table .ant-table-thead .ant-table-cell {
+    background: #E8F6FF;
+    text-align: center;
+}
+
+.pop-table .ant-table-tbody .ant-table-cell {
+    text-align: center;
+    color: var(--main-txt3-color);
+}
+
+.ant-pagination .ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination .ant-pagination-next .ant-pagination-item-link {
+    width: 48px;
+    height: 40px;
+    font-size: 20px;
+    color: #FFF;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: var(--t, #00A7EA);
+    display: flex;
+    align-items: center;
+}
+
+.ant-pagination .ant-pagination-item-active{
+    background-color: #ffffff;
+    border-color: #00A7EA;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .card-column {
     border-radius: 8px;
     border: 1px solid var(--main-txt1-color);

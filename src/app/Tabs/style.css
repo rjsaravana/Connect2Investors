@@ -4,3 +4,20 @@
     font-size: 16px;
     font-family: 'Inter';
 }
+
+
+.ant-tabs-nav .ant-tabs-ink-bar
+{
+    background:none !important;
+    border-bottom: 4px solid var(--t, #00A7EA) !important;
+}
+
+.ant-tabs-nav .ant-tabs-tab-btn{
+    color: #CFD3D4;
+    font-size: 16px !important;
+    font-family: 'Inter' !important;
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: #1C1B1F !important;
+}

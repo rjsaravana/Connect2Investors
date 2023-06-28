@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* position: fixed; */
+    position: fixed;
 }
 
 .nav-content {
@@ -19,5 +19,6 @@
     font-size: 16px;
     font-family: 'Lato';
     font-weight: 500;
+    cursor: pointer;
 }
 

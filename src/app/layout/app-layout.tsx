@@ -7,7 +7,7 @@ export const AppLayout:React.FC = ()=>{
         <Layout>
         <Navbar />
         <Layout className="app-container">
-          <Layout className="app-layout" style={{marginTop:"6%"}}>
+          <Layout className="app-layout" style={{marginTop:"5%",background:'#FEFEFE'}}>
             <Outlet />
           </Layout>
       </Layout>

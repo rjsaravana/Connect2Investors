@@ -24,19 +24,19 @@ const UpdatePage: React.FC = () => {
                 wrapperCol={{ span: 20 }}
               >
                 <Input
-                  placeholder="Bank Name"
+                  placeholder="Investor Name"
                   className="input-box-bg"
                   maxLength={50}
                 />
               </Form.Item>
 
               <Form.Item
-                name="bankName"
+                name="phoneNumber"
                 label="Phone Number"
                 wrapperCol={{ span: 20}}
               >
                 <Input
-                  placeholder="Bank Name"
+                  placeholder="Phone Number"
                   className="input-box-bg"
                   maxLength={50}
                 />
@@ -52,7 +52,7 @@ const UpdatePage: React.FC = () => {
                 wrapperCol={{ span: 21 }}
               >
                 <Input
-                  placeholder="Bank Name"
+                  placeholder="Investor Url"
                   className="input-box-bg"
                   maxLength={50}
                   type="url"
@@ -60,12 +60,12 @@ const UpdatePage: React.FC = () => {
               </Form.Item>
 
               <Form.Item
-                name="ifscCode"
+                name="investorEmail"
                 label="Investor Email"
                 wrapperCol={{ span: 21 }}
               >
                 <Input
-                  placeholder="Bank Name"
+                  placeholder="Investor Email"
                   className="input-box-bg"
                   maxLength={50}
                 />

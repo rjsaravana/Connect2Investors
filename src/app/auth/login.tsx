@@ -11,7 +11,7 @@ const Login: React.FC = () => {
     <Row gutter={24}>
       <Col className="login-background" span={12}>
         <div className="login-image">
-          <img src="./assets/interace-Logged-in.png" alt="Img" />
+          <img src="/assets/interace-Logged-in.png" alt="Img" />
         </div>
         <p className="hello-text">Hello Again!</p>
         <p className="login-text">
@@ -23,12 +23,12 @@ const Login: React.FC = () => {
         <div className="c2i-logo">
           <img
             style={{ width: "110px" }}
-            src="./assets/logo/c2i-logo.png"
+            src="/assets/logo/c2i-logo.png"
             alt="Img"
           />
           <img
             style={{ width: "150px" }}
-            src="./assets/logo/connect2investors-logo.png"
+            src="/assets/logo/connect2investors-logo.png"
             alt="Img"
           />
         </div>

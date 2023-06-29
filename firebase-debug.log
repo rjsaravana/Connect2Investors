@@ -1,0 +1,38 @@
+[debug] [2023-06-28T12:12:14.166Z] ----------------------------------------------------------------------
+[debug] [2023-06-28T12:12:14.168Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\91915\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-06-28T12:12:14.168Z] CLI Version:   11.30.0
+[debug] [2023-06-28T12:12:14.168Z] Platform:      win32
+[debug] [2023-06-28T12:12:14.168Z] Node Version:  v16.15.1
+[debug] [2023-06-28T12:12:14.169Z] Time:          Wed Jun 28 2023 17:42:14 GMT+0530 (India Standard Time)
+[debug] [2023-06-28T12:12:14.169Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-28T12:12:14.173Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-06-28T12:12:14.251Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-28T12:12:14.251Z] > authorizing via signed-in user (sarosaravana333@gmail.com)
+[debug] [2023-06-28T12:12:14.251Z] [iam] checking project react-menu-845c7 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-06-28T12:12:14.252Z] > refreshing access token with scopes: []
+[debug] [2023-06-28T12:12:14.253Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-28T12:12:14.253Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-28T12:12:14.532Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-28T12:12:14.532Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-28T12:12:14.538Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-menu-845c7:testIamPermissions [none]
+[debug] [2023-06-28T12:12:14.539Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-menu-845c7:testIamPermissions x-goog-quota-user=projects/react-menu-845c7
+[debug] [2023-06-28T12:12:14.539Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-menu-845c7:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-28T12:12:14.791Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-06-28T12:12:14.791Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-06-28T12:12:16.076Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-menu-845c7:testIamPermissions 200
+[debug] [2023-06-28T12:12:16.076Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-menu-845c7:testIamPermissions {}
+[debug] [2023-06-28T12:12:16.076Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project react-menu-845c7:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-06-28T12:12:16.078Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-menu-845c7 [none]
+[debug] [2023-06-28T12:12:16.636Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-menu-845c7 403
+[debug] [2023-06-28T12:12:16.636Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-menu-845c7 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-06-28T12:12:16.637Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-06-28T12:12:16.773Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\91915\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\91915\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project react-menu-845c7. Please make sure the project exists and your account has permission to access it.

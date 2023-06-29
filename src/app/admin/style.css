@@ -45,6 +45,7 @@
 .contact-content {
     padding: 25px;
     padding-left: 45px;
+    word-wrap: break-word;
 }
 
 .contact-content>h3 {
@@ -70,6 +71,7 @@
     font-size: 16px;
     font-family: 'Lato';
     line-height: 25px;
+    word-wrap: break-word;
 }
 
 

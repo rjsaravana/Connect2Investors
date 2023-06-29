@@ -1,14 +1,12 @@
+import { LockOutlined, MailOutlined } from "@ant-design/icons";
 import { Button, Card, Col, Input, Row } from "antd";
-import { MailOutlined, LockOutlined } from "@ant-design/icons";
-import "./style.css";
-import { Container } from "@mui/material";
-import Home from "../dashboard/home";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const Login: React.FC = () => {
   return (
     // <Container>
-    <Row gutter={24}>
+    <Row gutter={24} style={{height:'100vh'}}>
       <Col className="login-background" xl={12} lg={12} md={12} sm={24}>
         <div className="login-image">
           <img src="/assets/interace-Logged-in.png" alt="Img" />

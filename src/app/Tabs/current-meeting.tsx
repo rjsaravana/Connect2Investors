@@ -7,7 +7,7 @@ const CurrentMeeting: React.FC = () => {
   return (
     <>
       <Row>
-        <Col span={11} style={{ border: "none" }} className="card-column">
+        <Col xl={11} lg={11} md={24} sm={24} style={{ border: "none" }} className="card-column">
           <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>
@@ -91,7 +91,7 @@ const CurrentMeeting: React.FC = () => {
 
         {/*------------------------------------------- Second Col----------------------------------------------------- */}
 
-        <Col span={11} style={{ border: "none" }} className="card-column">
+        <Col  xl={11} lg={11} md={24} sm={24} style={{ border: "none" }} className="card-column">
           <Card className="dashboard-meeting-cards blue-background-cards" hoverable={true}>
             <div className="card-headers">
               <h4>Call with Hilda</h4>

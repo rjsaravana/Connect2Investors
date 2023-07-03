@@ -6,8 +6,8 @@ import "./style.css";
 const Login: React.FC = () => {
   return (
     // <Container>
-    <Row gutter={24} style={{height:'100vh'}}>
-      <Col className="login-background" xl={12} lg={12} md={12} sm={24}>
+    <Row gutter={24} style={{ height: "100vh" }}>
+      <Col className="login-background" xl={12} lg={12} md={24} sm={24}>
         <div className="login-image">
           <img src="/assets/interace-Logged-in.png" alt="Img" />
         </div>
@@ -17,7 +17,7 @@ const Login: React.FC = () => {
         </p>
       </Col>
 
-      <Col xl={12} lg={12} md={12} sm={24}>
+      <Col xl={12} lg={12} md={24} sm={24}>
         <div className="c2i-logo">
           <img
             style={{ width: "110px" }}
@@ -33,18 +33,22 @@ const Login: React.FC = () => {
 
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Card className="login-card">
-            <label className="email-text">Email</label>
-            <Input
-              className="email-input"
-              placeholder="Email"
-              prefix={<MailOutlined style={{ fontSize: "25px" }} />}
-            />
-            <label className="password-text">Password</label>
-            <Input
-              className="password-input"
-              placeholder="Password"
-              prefix={<LockOutlined style={{ fontSize: "25px" }} />}
-            />
+            <Row>
+              <Col xl={12} lg={12} md={24} sm={24}>
+                <label className="email-text">Email</label>
+                <Input
+                  className="email-input"
+                  placeholder="Email"
+                  prefix={<MailOutlined style={{ fontSize: "25px" }} />}
+                />
+                <label className="password-text">Password</label>
+                <Input
+                  className="password-input"
+                  placeholder="Password"
+                  prefix={<LockOutlined style={{ fontSize: "25px" }} />}
+                />
+              </Col>
+            </Row>
 
             <Link to="/home">
               <Button className="signup-btn" type="primary">

@@ -136,7 +136,7 @@ const InvestorInfo: React.FC = () => {
             </div>
             <div
               className="investor-details-content"
-              style={{ paddingBottom: "50px" }}
+              style={{ paddingBottom: "50px"}}
             >
               <label>Comments</label>
               <label className="input-vales-para">
@@ -144,7 +144,7 @@ const InvestorInfo: React.FC = () => {
                 printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an
                 unknown printer took a galley of type and scrambled it to make a
-                type s
+                types
               </label>
             </div>
           </div>

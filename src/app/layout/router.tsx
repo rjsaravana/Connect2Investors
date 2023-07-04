@@ -8,6 +8,7 @@ import AssignPage from "../dashboard/assignpage";
 import Home from "../dashboard/home";
 import Login from "../auth/login";
 import { AppLayout } from "./app-layout";
+import Dashboardpage from "../dashboard/dashboardpage";
 
 export const AppRoutes: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ export const AppRoutes: React.FC = () => {
         <Route path="meeting-schedule" element={<Meeting />} />
         <Route path="adminpage" element={<AdminPage />} />
         <Route path="updatepage" element={<UpdatePage />} />
+        <Route path="dashboardpage" element={<Dashboardpage />} />
       </Route>
     </Routes>
   );

@@ -209,6 +209,7 @@
 }
 
 .submit-btn {
+    margin: auto;
     font-size: 15px;
     font-family: 'Inter';
     color: #FEFEFE;

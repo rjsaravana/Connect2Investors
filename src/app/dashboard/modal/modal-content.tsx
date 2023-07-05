@@ -32,7 +32,7 @@ const ModalContent: React.FC = () => {
       dataIndex: "description",
     },
     {
-      title: "Created",
+      title: "Created By",
       key: "created",
       dataIndex: "created",
     },
